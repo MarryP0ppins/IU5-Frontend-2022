@@ -1,11 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-    </head>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" ">
+    <title>Лучшая страничка</title>
 
-    <body></body>
+</head>
+<body>
+    <ul class="menu">
+        <li class="first">
+            <a class="index">Начало</a>
+            <table>
+                <tr>
+                    <td style="height:600px">
+                        <img class="T" src="img/T.png" />
+                        <a id="first_title" style="text-align:center"><b>Лекция 1</b></a>
+                        <br />
+                        <h2>HTML & CSS (начало)</h2>
+                    </td>
+                </tr>
+            </table>
+        </li>
+        <li class="second">
+            <a class="index">План</a>
+            <table style="text-align:left">
+                <tr style="height:140px">
+                    <td>
+                        <img class="T" src="img/T.png" />
+                        <h1 class="index">План</h1>
+                    </td>
+
+                </tr>
+                <tr style="height:460px">
+                    <td class="body">
+
+                        <h5 style="text-indent: 20px">HTML</h5>
+                        <ul type="circle">
+                            <li style="color:coral">Теги</li>
+                            <li style="color:rgb(0, 177, 1)">Родительские и дочерние классы</li>
+                            <li id="color">структура HTML документаб head, body</li>
+                            <li><overline>атрибуты</overline></li>
+                            <li><u>примеры использования популярных тегов (заголовки, текст. ссылки, изображения)</u></li>
+                        </ul>
+                        <h5 style="text-indent: 20px">CSS</h5>
+                        <ul type="circle">
+                            <li>Что такое<sub>CSS</sub></li>
+                            <li><teg class="yep">Синтаксис задания стилей и способ подключения <sup>CSS</sup> к </teg></li>
+                            <li>Классы</li>
+                            <li>Способы задания размеров</li>
+                            <li>Типы и приоритетность селекторов</li>
+                            <li>Псевдоклассы и</li>
+                            <li>Некоторые свойства</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </li>
+        <li class="third">
+            <a class="index">HTML</a>
+            <table style="text-align:left">
+                <tr style="height:140px">
+                    <td>
+                        <img class="T" src="img/T.png" />
+                        <h1 class="index">HTML</h1>
+                    </td>
+                </tr>
+                <tr style="height:460px">
+                    <td class="body">
+                        <a>
+                            HTML — стандартизированный язык разметки документов для
+                            просмотра веб-страниц в браузере.
+                            <br /><br />
+                            HTML создаёт каркас сайта, а другие технологии используются
+                            для оформления внешнего вида (CSS) или контроля функционала
+                            страницы (JavaScript)
+                            <img class="third" src="img/JCH.png" />
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </li>
+        <li class="fouth">
+            <a class="index">Теги HTML</a>
+            <table style="text-align:left">
+                <tr style="height:140px">
+                    <td>
+                        <img class="T" src="img/T.png" />
+                        <h1 class="index">Теги HTML</h1>
+                    </td>
+                </tr>
+                <tr style="height:460px">
+                    <td class="body">
+                        <a>
+                            Теги - конструкции, которые указывают
+                            браузеру, как необходимо отображать
+                            содержащийся в них контент. У любого
+                            HTML-тега есть имя и он обернут в угловые
+                            скобки
+                            <br /><br />
+                            Можно выделить следующие категории:
+                            <ul type="circle">
+                                <li>Теги для текста (h1-h6, p, span и др.)</li>
+                                <li>Теги для форм (form, input, label и др.)</li>
+                                <li>Теги для таблиц (table, tr, td, th и др.)</li>
+                                <li>Специальные теги (body, header)</li>
+                            </ul>
+                            <br /><br />
+                            <img style="position: absolute; " src="img/hello world.png" />
+                            <img style="position:absolute; right:0px" src="img/hello world 2.png" />
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </li>
+        <li class="fifth">
+            <a class="index">Структура HTML тега</a>
+            <table style="text-align:left">
+                <tr style="height:140px">
+                    <td>
+                        <img class="T" src="img/T.png" />
+                        <h1 class="index">Структура HTML тега</h1>
+                    </td>
+                </tr>
+                <tr style="height:460px">
+                    <td class="body">
+                        <img class="fifth" src="img/structure.png" />
+                    </td>
+                </tr>
+            </table>
+        </li>
+        <li class="sixth">
+            <a class="index">Родительские и дочерние элементы</a>
+            <table style="text-align:left">
+                <tr style="height:140px">
+                    <td>
+                        <img class="T" src="img/T.png" />
+                        <h1 class="index">Родительские и дочерние элементы</h1>
+                    </td>
+                </tr>
+                <tr style="height:460px">
+                    <td class="body">
+                        В HTML в элементы можно вкладывать не только текст, но и
+                        другие элементы. В таком случае вложенный элемент называется
+                        дочерним, а тот, в который обёрнут дочерний - родительским.
+                        <br /><br />
+                        Дочерний элемент всегда должен завершаться раньше, чем
+                        заканчивается родительский.<br/>
+                        <img class="sixth" src="img/sixth.png" />
+                    </td>
+                </tr>
+            </table>
+        </li>
+        <li class="seventh">
+            <a class="index">Структура HTML документа</a>
+            <table style="text-align:left">
+                <tr style="height:140px">
+                    <td>
+                        <img class="T" src="img/T.png" />
+                        <h1 class="index"></h1>
+                    </td>
+                </tr>
+                <tr style="height:460px">
+                    <td class="body">
+                    </td>
+                </tr>
+            </table>
+        </li>
+        <li class="eighth">
+            <a class="index">Атрибуты</a>
+            <table style="text-align:left">
+                <tr style="height:140px">
+                    <td>
+                        <img class="T" src="img/T.png" />
+                        <h1 class="index">Атрибуты</h1>
+                    </td>
+                </tr>
+                <tr style="height:460px">
+                    <td class="body">
+                        <a>
+                            Атрибуты задают дополнительные параметры элементов.
+                            Атрибут встраивается только в открывающий тег. Значение
+                            атрибута приводят в одинарных или двойных кавычках. Выбор
+                            кавычек значения не имеет, однако открывающие и закрывающие
+                            кавычки должны быть одинаковыми
+                            <img style="position: absolute; left: 50px; bottom:300px;" src="img/eighth.png" />
+
+                        </a>
+                        <form action="https://github.com/MarryP0ppins/IU5-Frontend-2022" target="_blank">
+                            <button title="Кнопка">Кнопка с подписью</button>
+                        </form>
+
+                    </td>
+                </tr>
+            </table>
+        </li>
+        <li class="ninth">
+            <a class="index">Примеры использования тегов. Заголовки.</a>
+            <table style="text-align:left">
+                <tr style="height:140px">
+                    <td>
+                        <img class="T" src="img/T.png" />
+                        <h1 class="index">Примеры использования тегов. Заголовки.</h1>
+                    </td>
+                </tr>
+                <tr style="height:460px">
+                    <td class="body">
+                        В HTML существует шесть тегов заголовков разного уровня: h1,
+                        h2, h3, h4, h5, h6.
+                        <br /><br />
+                        Заголовок первого уровня — самый крупный, а последний -
+                        меньше обычного текста. Благодаря правильному использованию
+                        заголовочных тегов поисковым системам легче анализировать
+                        сайт, а пользователям будет удобнее его читать.
+                        <img style="position: absolute; left: 50px; bottom:40px;" src="img/ninth.png" />
+                        <a style="text-align:right">
+                            <h1>Заголовок 1</h1>
+                            <h2>Заголовок 2</h2>
+                            <h3>Заголовок 3</h3>
+                            <h4>Заголовок 4</h4>
+                            <h5>Заголовок 5</h5>
+                            <h6>Заголовок 6</h6>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </li>
+        <li class="tenth">
+            <a class="index">Примеры. Изображения, ссылки, текст</a>
+            <table style="text-align:left">
+                <tr style="height:140px">
+                    <td>
+                        <img class="T" src="img/T.png" />
+                        <h1 class="index">Примеры. Изображения, ссылки, текст</h1>
+                    </td>
+                </tr>
+                <tr style="height:460px">
+                    <td class="body">
+                        <p>
+                            <a href="https://github.com/MarryP0ppins/IU5-Frontend-2022" target="_blank"><img style="position: absolute; bottom:150px" src="img/tenth.png" /></a>
+                            <a href="https://github.com/MarryP0ppins/IU5-Frontend-2022" target="_blank">Текст с гиперсылкой</a>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </li>
+        <li class="eleventh">
+            <a class="index">Блочные и строчные элементы</a>
+            <table style="text-align:left">
+                <tr style="height:140px">
+                    <td>
+                        <img class="T" src="img/T.png" />
+                        <h1 class="index">Блочные и строчные элементы</h1>
+                    </td>
+                </tr>
+                <tr style="height:460px">
+                    <td class="body">
+                        <p style="text-indent: 20px">Элементы в HTML делятся на блочные и строчные:</p>
+                        <ul type="circle">
+                            <li>
+                                Блочные элементы (block) занимают всю ширину своего
+                                родителя (контейнера), формально создавая «блок» (отсюда и
+                                название).
+                            </li>
+                            <li>
+                                Строчные элементы (inline) это те, которые занимают только
+                                то пространство, которое ограничено тегами, определяющими
+                                строчный элемент (необходимое для отображения их
+                                содержимого) и не нарушая потока содержимого (не требующее
+                                новой строки после каждого элемента).
+                            </li>
+                        </ul>
+                        <p style="text-indent: 20px">
+                            Пример:
+                        </p>
+                        <p style="text-indent: 20px">
+                            Блочные: &lt;div&gt;, &lt;p&gt;, &lt;ul&gt;, &lt;ul&gt;, &lt;section&gt;
+                        </p>
+                        <p style="text-indent: 20px">
+                            Строчные: &lt;span&gt;, &lt;a&gt;, &lt;strong&gt;
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </li>
+        <li class="twelfth">
+            <a class="index">Формы</a>
+            <table style="text-align:left">
+                <tr style="height:140px">
+                    <td>
+                        <img class="T" src="img/T.png" />
+                        <h1 class="index">Формы</h1>
+                    </td>
+                </tr>
+                <tr style="height:460px">
+                    <td class="body">
+                        Для создания форм используются следующие HTML-элементы:
+                        <a href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/form" target="_blank">&lt;form&gt;</a>
+                        <a href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/label" target="_blank">&lt;label&gt;</a>
+                        <a href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/input" target="_blank">&lt;input&gt;</a>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea" target="_blank">&lt;textarea&gt;</a>
+                        <a href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/button" target="_blank">&lt;button&gt;</a>.
+                        <img class="twelfth" src="img/twelfth.png" />
+                        <form action="/" target="_blank">
+                            <label for="fname">Имя:</label><br />
+                            <input type="text" id="fname" name="fname" placeholder="Введите имя" /><br />
+                            <label for="lname">Фамилия:</label><br />
+                            <input type="text" id="lname" name="lname" value="Иванов" /><br /><br />
+                            <input type="submit" value="Отправить" />
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </li>
+    </ul>
+</body>
 </html>
