@@ -1,0 +1,123 @@
+
+ul.menu {
+    width: 180px; 
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+    font-family: 'Times New Roman', Times, serif font-size: 10pt; 
+}
+
+li table {
+    position: absolute; 
+    display: none; 
+    margin-left: 165px; 
+    margin-top: -2em; 
+    text-align: center;
+}
+
+li a.index {
+    display: block; 
+    padding: 5px;
+    text-decoration: none; 
+    color: #666; 
+    border: 1px solid #ccc; 
+    background-color: #f0f0f0; 
+}
+
+    li a.index:hover {
+        color: #ffe; 
+        background-color: #5488af;
+    }
+
+li:hover table {
+    display: block;
+    width: 808px;
+    height: 612px;
+    background-image: url(img/background.png);
+    background-size: cover;
+    border: inset;
+    border-width: 3px;
+}
+
+img.T {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 90px;
+    height: 90px;
+    border-radius: 45px
+}
+
+img.third {
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+    width: 300px;
+    height: 225px
+}
+
+img.twelfth {
+    position: absolute;
+    bottom: 150px;
+    left: 50px;
+    width: 500px;
+    height: 150px
+}
+
+img.fifth {
+    position: absolute;
+    padding: 50px 0 0 50px;
+    width: 600px;
+    height: 350px
+    
+}
+
+img.sixth {
+    position: absolute;
+    padding: 50px 0 0 50px;
+    width: 600px;
+    height: 200px;
+}
+
+#first_title {
+    font-size: 80px
+}
+
+td.body {
+    padding: 0px 50px 50px;
+    vertical-align: top;
+}
+
+
+h1.index {
+    text-indent: 20px;
+    vertical-align: top;
+}
+
+td {
+    width: 800px
+}
+
+#color{
+    color: #a8006f
+}
+
+teg.yep:after {
+    content: "html";
+}
+
+@media screen {
+    teg {
+        font-size: 12pt;
+        font-family:'Times New Roman', Times, serif
+    }
+}
+
+
+@media screen {
+    overline {
+        font-size: 12pt;
+        font-family: 'Times New Roman', Times, serif;
+        text-decoration:overline;
+    }
+}
