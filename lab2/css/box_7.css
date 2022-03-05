@@ -1,0 +1,176 @@
+.box_7 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background-color: #182333;
+}
+
+    .box_7 .content {
+        display: flex;
+        align-self: stretch;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1150px;
+        width: 100%;
+        padding: 100px 14.5%;
+    }
+
+        .box_7 .content .first {
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+            align-items: flex-start;
+            justify-content: space-between;
+            height: 201px;
+            width: 437px;
+        }
+
+            .box_7 .content .first #top {
+                font-size: 56px;
+                color: white;
+                font-family: inherit;
+                padding: 10px;
+            }
+
+            .box_7 .content .first #bottom_big {
+                font-size: 19px;
+                text-align: left;
+                color: white;
+                font-family: inherit;
+                padding: 10px;
+            }
+
+            .box_7 .content .first #bottom_small {
+                font-size: 19px;
+                text-align: center;
+                color: white;
+                font-family: inherit;
+                padding: 10px;
+            }
+
+        .box_7 .content .second {
+            display: flex;
+            flex-direction: column;
+            align-self: stretch;
+            align-items: flex-start;
+            justify-content: space-between;
+            width: 290px;
+            align-self: center;
+            padding-left: 15px;
+        }
+
+            .box_7 .content .second #top {
+                font-size: 18px;
+                text-align: center;
+                color: white;
+                font-family: inherit;
+                padding: 10px;
+            }
+
+            .box_7 .content .second .cost {
+                display: flex;
+                width: 233px;
+                height: 96px;
+            }
+
+                .box_7 .content .second .cost #left {
+                    font-size: 72px;
+                    text-align: center;
+                    color: #F3CD03;
+                    font-family: inherit;
+                    padding: 0px;
+                }
+
+                .box_7 .content .second .cost #right {
+                    font-size: 24px;
+                    text-align: left;
+                    color: white;
+                    font-family: inherit;
+                    padding: 10px;
+                }
+
+            .box_7 .content .second #bottom {
+                font-size: 19px;
+                text-align: left;
+                color: white;
+                font-family: inherit;
+                padding: 20px 10px;
+            }
+
+            .box_7 .content .second button {
+                width: 196px;
+                height: 52px;
+                background-color: #00B6F0;
+                border-radius: 26px;
+                font-family: inherit;
+                color: white;
+                font-size: 18px;
+                border: 1px solid #00B6F0;
+            }
+
+                .box_7 .content .second button:hover {
+                    background-color: white;
+                    color: #00B6F0;
+                }
+
+@media screen and (max-width: 1000px) {
+    .box_7 .content {
+        flex-direction: column;
+        height: auto;
+    }
+
+        .box_7 .content .first {
+            align-items: center;
+            max-width: 400px;
+            width: auto;
+            height: auto;
+            padding-bottom: 57px;
+        }
+
+            .box_7 .content .first #bottom_big {
+                display: none;
+            }
+
+        .box_7 .content .pictures .circle #circle {
+            left: 61%;
+            top: 40px;
+        }
+
+        .box_7 .content .second {
+            width: 198px;
+            align-items: center;
+            height: auto;
+            padding-left: 0px;
+        }
+
+            .box_7 .content .second #top {
+                font-size: 24px;
+                width: 140px;
+            }
+
+            .box_7 .content .second .cost {
+                width: auto;
+            }
+
+                .box_7 .content .second .cost #right {
+                    font-size: 18px;
+                    width: 72px;
+                    padding: 12px 10px;
+                    line-height: 28px;
+                }
+
+            .box_7 .content .second #bottom {
+                font-size: 19px;
+                text-align: center;
+                min-width: 190px;
+            }
+}
+
+
+@media screen and (min-width: 1001px) {
+
+    .box_7 .content .first #bottom_small {
+        display: none;
+    }
+}
