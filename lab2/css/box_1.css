@@ -1,0 +1,356 @@
+html {
+    font-size: 100%;
+    align-items: center;
+}
+
+body {
+    display: block;
+    margin: 0px 0px;
+    font-family: 'Century Gothic';
+    width: 100%;
+}
+
+.box_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 0px;
+    padding: 30px 0px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 1489px;
+    left: 0px;
+    background: linear-gradient(180deg, #FFFFFF 25%, rgba(0, 225, 198, 0.3) 40%, #FFFFFF 75%);
+}
+
+    .box_1 .navbar {
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        padding: 0px 51px;
+        margin: 0px;
+        position: static;
+        height: 119px;
+        align-self: stretch;
+        justify-content: space-around;
+    }
+
+        .box_1 .navbar #logo {
+            padding: 0px 0px;
+        }
+
+        .box_1 .navbar .menu {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 34.5%;
+            max-width: 500px;
+        }
+
+            .box_1 .navbar .menu a {
+                text-decoration: none;
+                font-family: inherit;
+                font-size: 20px;
+                color: black;
+            }
+
+                .box_1 .navbar .menu a:hover {
+                    color: dodgerblue;
+                }
+
+        .box_1 .navbar .right-top {
+            width: 196px;
+            height: 52px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+            .box_1 .navbar .right-top button {
+                width: 140px;
+                height: 52px;
+                background-color: white;
+                border: 1px solid #00B6F0;
+                box-sizing: border-box;
+                border-radius: 85px;
+                font-family: inherit;
+                color: #00B6F0;
+                font-size: 20px;
+            }
+
+                .box_1 .navbar .right-top button:hover {
+                    color: black;
+                    background: #00B6F0;
+                }
+
+    .box_1 .confetti_shapes {
+        z-index: 1;
+        width: 100%;
+        height: 1px;
+        position: static;
+        display: inherit;
+    }
+
+        .box_1 .confetti_shapes #box_1_oval {
+            position: absolute;
+            height: 475px;
+            left: 74.5%;
+            top: 530px;
+        }
+
+        .box_1 .confetti_shapes #box_1_circle {
+            position: absolute;
+            height: 662px;
+            right: 79.7%;
+            top: 360px;
+            transform: rotate(68.94deg);
+        }
+
+    .box_1 .text {
+        z-index: 2;
+        width: 100%;
+        height: 289px;
+        width: 100%;
+        padding: 39px 0px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+
+        .box_1 .text #big {
+            height: auto;
+            font-family: inherit;
+            font-size: 72px;
+            color: #112D57;
+            text-align: center;
+            padding: 10px 65px;
+            line-height: 70px;
+            max-width: 870px;
+        }
+
+        .box_1 .text #small_small {
+            height: auto;
+            font-family: inherit;
+            font-size: 24px;
+            text-align: center;
+            padding: 10px 91px;
+            min-width: 200px;
+        }
+
+        .box_1 .text #small_big {
+            width: 544px;
+            height: 76px;
+            font-family: inherit;
+            font-size: 24px;
+            text-align: center;
+            padding: 10px;
+        }
+
+    .box_1 .buttons {
+        z-index: 2;
+        display: flex;
+        justify-content: space-between;
+        width: 411px;
+        height: 52px;
+    }
+
+        .box_1 .buttons .blue {
+            width: 192px;
+            height: 52px;
+            background-color: #00B6F0;
+            border-radius: 96px;
+            font-family: inherit;
+            color: white;
+            font-size: 18px;
+            border: 0px;
+        }
+
+            .box_1 .buttons .blue:hover {
+                background-color: white;
+                color: #00B6F0;
+            }
+
+        .box_1 .buttons .white {
+            width: 192px;
+            height: 52px;
+            background-color: white;
+            border-radius: 96px;
+            font-family: inherit;
+            color: black;
+            font-size: 18px;
+            border: 0px;
+        }
+
+            .box_1 .buttons .white:hover {
+                color: #00B6F0;
+            }
+
+    .box_1 .screen {
+        z-index: 2;
+        width: 87.3%;
+        height: 62.6vw;
+        display: block;
+        max-height: 896px;
+        max-width: 1250px;
+    }
+
+        .box_1 .screen .navigation {
+            background-image: url(img/box_1_navigation.png);
+            background-size: cover;
+            width: 100%;
+            height: 6.5%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+            .box_1 .screen .navigation .buttons {
+                width: 5.36%;
+                height: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+                .box_1 .screen .navigation .buttons #maximise {
+                    width: 21.25%;
+                    height: 24.2%;
+                    border-radius: 50%;
+                    background-color: #49d05d;
+                }
+
+                .box_1 .screen .navigation .buttons #minimise {
+                    width: 21.25%;
+                    height: 24.2%;
+                    border-radius: 50%;
+                    background-color: #cdb668;
+                }
+
+                .box_1 .screen .navigation .buttons #close {
+                    width: 21.25%;
+                    height: 24.2%;
+                    border-radius: 50%;
+                    background-color: #dc5959;
+                }
+
+            .box_1 .screen .navigation .url {
+                width: 87.4%;
+                height: 45.4%;
+                border: 0px;
+                border-radius: 5px;
+            }
+
+        .box_1 .screen #web {
+            width: 100%;
+            height: 93.4%;
+        }
+
+@media screen and (max-width:1200px) {
+    .box_1 {
+        height: 1360px;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .box_1 {
+        height: 1231px;
+    }
+
+        .box_1 .screen {
+            max-width: 900px;
+            max-height: 646px;
+        }
+}
+
+@media screen and (max-width:1000px) {
+    .box_1 {
+        height: 1110px;
+    }
+
+        .box_1 .navbar .menu {
+            display: none;
+        }
+
+        .box_1 .navbar {
+            padding: 0px 5.2%;
+            justify-content: space-between;
+        }
+
+        .box_1 .confetti_shapes #box_1_circle {
+            top: 16.7%;
+        }
+
+        .box_1 .confetti_shapes #box_1_oval {
+            top: 38.9%;
+        }
+
+        .box_1 .text #small_small {
+            display: block;
+        }
+
+        .box_1 .text #small_big {
+            display: none;
+        }
+
+        .box_1 .screen {
+            max-width: 698px;
+            max-height: 500px;
+        }
+}
+
+
+@media screen and (max-width:600px) {
+    .box_1 .buttons {
+        flex-direction: column;
+        align-items: center;
+        height: 120px;
+    }
+
+        .box_1 .buttons .blue {
+            width: 250px;
+        }
+
+        .box_1 .buttons .white {
+            width: 250px;
+            border: 1px solid #00B6F0;
+        }
+
+    .box_1 .text {
+        height: 200px;
+    }
+
+        .box_1 .text #small_small {
+            font-size: 100%
+        }
+
+        .box_1 .text #big {
+            font-size: 300%;
+            line-height: 50px;
+        }
+
+    .box_1 .navbar .right-top button {
+        display: none;
+    }
+}
+
+@media screen and (min-width:1001px) {
+    .box_1 .navbar .right-top {
+        width: 140px;
+        height: 52px;
+    }
+
+        .box_1 .navbar .right-top img {
+            display: none;
+        }
+
+    .box_1 .text #small_big {
+        display: block;
+    }
+
+    .box_1 .text #small_small {
+        display: none;
+    }
+}

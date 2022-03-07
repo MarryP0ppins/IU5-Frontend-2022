@@ -1,0 +1,113 @@
+.box_2 {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    align-items: center;
+    padding-top: 62px;
+    padding-bottom: 62px;
+    width: 100%;
+}
+
+    .box_2 .text_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 16.1% 59px 16.1%;
+        flex-basis: content;
+        word-break: normal;
+    }
+
+        .box_2 .text_content #first {
+            text-align: center;
+            color: #F3CD03;
+            font-family: inherit;
+            font-size: 36px;
+        }
+
+        .box_2 .text_content #second {
+            flex-basis: content;
+            text-align: center;
+            color: #20262A;
+            font-family: inherit;
+            font-size: 56px;
+            padding: 10px;
+        }
+
+        .box_2 .text_content #fhird {
+            text-align: center;
+            color: #5C5C5C;
+            font-family: inherit;
+            font-size: 24px;
+            padding: 10px;
+            max-width: 480px;
+        }
+
+    .box_2 .buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        min-width: 445px;
+    }
+
+        .box_2 .buttons .blue {
+            width: 187px;
+            height: 52px;
+            background-color: #00B6F0;
+            border-radius: 96px;
+            font-family: inherit;
+            color: white;
+            font-size: 18px;
+            border: 1px solid #00B6F0;
+        }
+
+            .box_2 .buttons .blue:hover {
+                background-color: white;
+                color: #00B6F0;
+            }
+
+        .box_2 .buttons .white {
+            width: 245px;
+            height: 52px;
+            background-color: white;
+            border: 1px solid #00B6F0;
+            border-radius: 96px;
+            font-family: inherit;
+            color: black;
+            font-size: 18px;
+        }
+
+            .box_2 .buttons .white:hover {
+                color: #00B6F0;
+            }
+
+@media screen and (max-width:600px) {
+    .box_2 .buttons {
+        flex-direction: column;
+        height: 125px;
+        min-width: 250px;
+    }
+
+        .box_2 .buttons .blue {
+            width: 250px;
+            height: 57px;
+        }
+
+        .box_2 .buttons .white {
+            width: 250px;
+            height: 57px;
+        }
+
+    .box_2 .text_content #first {
+        font-size: 128%;
+    }
+
+    .box_2 .text_content #second {
+        font-size: 200%;
+    }
+
+    .box_2 .text_content #fhird {
+        font-size: 85%;
+    }
+}

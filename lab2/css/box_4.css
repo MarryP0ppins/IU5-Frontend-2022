@@ -1,0 +1,164 @@
+.box_4 {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    align-items: stretch;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    padding: 100px 10%;
+    width: 80%;
+}
+
+    .box_4 .content {
+        display: flex;
+        flex-direction: row;
+        align-self: stretch;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
+        width: 100%;
+        max-width: 1030px;
+    }
+
+        .box_4 .content .text {
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            align-self: stretch;
+            align-items: stretch;
+            justify-content: space-between;
+            padding-top: 47px;
+            padding-bottom: 47px;
+            padding-left: 20px;
+            width: 460px;
+        }
+
+            .box_4 .content .text #top_big {
+                font-size: 36px;
+                text-align: left;
+                color: black;
+                font-family: inherit;
+            }
+
+            .box_4 .content .text #top_small {
+                font-size: 36px;
+                text-align: center;
+                color: black;
+                font-family: inherit;
+            }
+
+            .box_4 .content .text #center_big {
+                font-size: 24px;
+                text-align: left;
+                color: #5C5C5C;
+                font-family: inherit;
+            }
+
+            .box_4 .content .text #center_small {
+                font-size: 24px;
+                text-align: center;
+                color: #5C5C5C;
+                font-family: inherit;
+                padding: 15px 0px;
+            }
+
+            .box_4 .content .text #bottom {
+                font-size: 18px;
+                text-align: left;
+                color: #00B6F0;
+                font-family: inherit;
+            }
+
+                .box_4 .content .text #bottom:hover {
+                    color: rgb(255, 69, 0)
+                }
+
+        .box_4 .content .pictures {
+            display: flex;
+            flex-direction: column;
+            align-self: stretch;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            width: 460px;
+            overflow: hidden;
+            align-self: center;
+        }
+
+            .box_4 .content .pictures .circle {
+                z-index: 1;
+                width: 100%;
+                height: 1px;
+                position: static;
+                display: inherit;
+            }
+
+                .box_4 .content .pictures .circle #circle {
+                    position: absolute;
+                    width: 470px;
+                    height: 501px;
+                    right: 72%;
+                    top: 40px;
+                }
+
+            .box_4 .content .pictures .img {
+                z-index: 2;
+                display: flex;
+                width: 100%;
+                height: 351px;
+                justify-content: center;
+                position: relative;
+                overflow: hidden;
+                border-radius: 5px;
+            }
+
+                .box_4 .content .pictures .img img {
+                    width: 516px;
+                    height: 351px;
+                }
+
+@media screen and (max-width: 1000px) {
+    .box_4 .content {
+        flex-direction: column;
+        min-height: 650px;
+    }
+
+        .box_4 .content .text {
+            padding: 28px 0px 0px 0px;
+            align-self: center;
+            min-height: 250px;
+            width: auto;
+            max-width: 550px;
+        }
+
+            .box_4 .content .text #top_big {
+                display: none;
+                text-align: center;
+            }
+
+            .box_4 .content .text #center_big {
+                display: none;
+                text-align: center;
+            }
+
+            .box_4 .content .text #bottom {
+                text-align: center;
+            }
+
+        .box_4 .content .pictures .circle #circle {
+            left: 61%;
+            top: 40px;
+        }
+}
+
+
+@media screen and (min-width: 1001px) {
+    .box_4 .content .text #top_small {
+        display: none;
+    }
+
+    .box_4 .content .text #center_small {
+        display: none;
+    }
+}
