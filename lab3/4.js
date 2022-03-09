@@ -8,13 +8,8 @@
  */
 
 function prettySum(arr) {
-    let out = 0;
-    len = arr.length
-    for (let i = 0; i < len; i++) {
-        if (i % 2 == 0) { out += arr[i]; }
-    }
-    out *= arr[len - 1];
-    return out;
+    const mul = arr.at(-1);
+    return arr.reduce((accumulator, currentValue, index) => index % 2 == 0 ? accumulator += currentValue * mul : accumulator, 0);
 }
-/*console.log(prettySum([-5, 15, 32, -1, 0]));*/
+/*console.log(prettySum([3, 2, 6, 5, 4, 1, 2]));*/
 module.exports = prettySum;
