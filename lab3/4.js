@@ -11,5 +11,5 @@ function prettySum(arr) {
     const mul = arr.at(-1);
     return arr.reduce((accumulator, currentValue, index) => index % 2 == 0 ? accumulator += currentValue * mul : accumulator, 0);
 }
-/*console.log(prettySum([3, 2, 6, 5, 4, 1, 2]));*/
+console.log(prettySum([0, 0, 0, 4, 4, 4]));
 module.exports = prettySum;
