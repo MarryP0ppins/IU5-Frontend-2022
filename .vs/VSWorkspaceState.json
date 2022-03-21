@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\lab4",
+    "\\tests"
   ],
-  "SelectedNode": "\\C:\\Users\\nagor\\Documents\\git\\IU5-Frontend-2022",
+  "SelectedNode": "\\tests\\lab4.test.js",
   "PreviewInSolutionExplorer": false
 }

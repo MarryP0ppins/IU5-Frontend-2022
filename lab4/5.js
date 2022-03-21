@@ -11,7 +11,15 @@
  */
 
 function checkBrackets(str) {
-    //code here
+    check = Array(0), brackets = { ']': '[', '>': '<', ')': '(' }
+    str = str.split('');
+    for (const elem of str) {
+        if (Object.values(brackets).includes(elem)) check.push(elem)
+        else if (check.pop() != brackets[elem]) return false
+    }
+    return true
 }
 
+
+//console.log(checkBrackets('([)]()<>'))
 module.exports = checkBrackets;

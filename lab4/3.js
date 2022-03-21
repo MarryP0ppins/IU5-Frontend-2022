@@ -8,7 +8,14 @@
  */
 
 function rle(str) {
-    //code here
+    out = '', count = 1
+    str.split('').concat(' ').reduce((prev, char) => {
+        char != prev ? (out += prev + (count > 1 ? count : '')) && (count = 1) : count++;
+        return char;
+    })
+    return out
 }
 
+
+//console.log('-' + rle("BBBBBBBBBBBBBBBBBBBBBBBBBBBBB") + '-')
 module.exports = rle;
