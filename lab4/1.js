@@ -8,7 +8,7 @@
 
 
 function getAnagramms(arr) {
-    out = {}
+    const out = {}
     arr.map((str) => {
         anagramm = str.toLowerCase().split('').sort().join('');
         out[anagramm] ? out[anagramm].push(str) : out[anagramm] = [str];
@@ -17,5 +17,5 @@ function getAnagramms(arr) {
 }
 
 
-//console.log(getAnagramms(["мир", "222"]))
+console.log(getAnagramms(["мир", "222"]))
 module.exports = getAnagramms;

@@ -14,7 +14,26 @@
  */
 
 function memoize(func) {
-    //code here
+    let result_
+    return a = (...args) => {
+        cache_ = true;
+        (result_ != func(...args)) && (result_ = func(...args)) && (cache_ = false)
+        return { 'cache': cache_, 'result': result_ }
+    }
 }
+
+
+/*const add = (a) => a * 2;
+const memozedAdd = memoize(add)
+
+
+console.log(
+    memozedAdd(1),
+    memozedAdd(1),
+    memozedAdd(2),
+    memozedAdd(1),
+    memozedAdd(2),
+    memozedAdd(2)
+)*/
 
 module.exports = memoize;
