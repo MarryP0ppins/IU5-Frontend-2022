@@ -14,15 +14,15 @@
  */
 
 
-function curry(fn) {
+function curry(f) {
     return concatenate = (...args) => {
-        if (args.length < fn.length) return (...args_next) => concatenate.apply(this, args.concat(args_next))
-        else return fn(...args)
+        if (args.length < f.length) return (...args_next) => concatenate.apply(this, args.concat(args_next))
+        else return f(...args)
     }
 }
+/*
 
-
-/*function add(a, b, c) {
+function add(a, b, c) {
     return a + b + c;
 }
 
