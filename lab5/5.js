@@ -90,28 +90,5 @@ function makeRoute1(arr) {
     }
     return route
 }
-/*
-
-console.log(
-    makeRoute(
-        [
-            { from: 'K', to: 'B' },
-            { from: 'L', to: 'M' },
-            { from: 'B', to: 'A' },
-            { from: 'A', to: 'L' },
-        ]
-    ),
-    makeRoute(
-        [
-            { from: 'L', to: 'M' },
-            { from: 'M', to: 'N' },
-            { from: 'A', to: 'L' },
-            { from: 'B', to: 'A' },
-            { from: 'N', to: 'Z' },
-        ]
-    ),
-    makeRoute([])
-)
-*/
 
 module.exports = makeRoute;

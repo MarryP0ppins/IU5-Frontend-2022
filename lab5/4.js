@@ -23,17 +23,4 @@ function memoize(func) {
 }
 
 
-/*const add = (a) => a * 2;
-const memozedAdd = memoize(add)
-
-
-console.log(
-    memozedAdd(1),
-    memozedAdd(1),
-    memozedAdd(2),
-    memozedAdd(1),
-    memozedAdd(2),
-    memozedAdd(2)
-)*/
-
 module.exports = memoize;

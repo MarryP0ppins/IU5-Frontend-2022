@@ -20,14 +20,5 @@ function curry(f) {
     }
 }
 
-/*
-function add(a, b, c) {
-    return a + b + c;
-}
-
-let a = curry(add)(1)(2);
-console.log('a = ',a);
-console.log('a(3) = ',a(3))
-*/
 
 module.exports = curry;

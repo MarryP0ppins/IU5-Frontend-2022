@@ -20,18 +20,3 @@ Array.prototype.myMap = function (callback, thisArg) {
     }, 0)
     return out
 }
-
-/*ar = [1, 2, 3]
-
-console.log(ar.myMap([1, 2, 3]))
-
-console.log(
-    ar.myMap((x) => x * 2),
-    ['1', '2', '3'].myMap(parseInt),
-    [].myMap((x) => x * 2),
-    ["Bilbo", "Gandalf", "Nazgul"].myMap(item => item.length),
-    ar.myMap(function (item, index, array) {
-        return item * 3;
-    }),
-    ar.myMap(function (x) { return x * this.windowSize }, { windowSize: 10 })
-)*/
