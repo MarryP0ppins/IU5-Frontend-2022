@@ -1,0 +1,83 @@
+#task_1, #task_2 {
+    text-align: center;
+    border: 1px solid;
+    width: 50px;
+    height: 50px;
+    margin: 50px;
+}
+
+#click {
+    border: 1px solid;
+    text-align: center;
+}
+
+#task_3 {
+    width: 200px;
+    height: auto;
+}
+
+    #task_3 .hidden {
+        overflow: hidden;
+        max-height: 0px;
+        transition: 0.5s;
+    }
+
+    #task_3 .visible {
+        overflow: auto;
+        max-height: 150px;
+        text-align: center;
+        transition: 0.5s;
+    }
+
+#menu {
+    padding: 0px;
+}
+
+#task_4 {
+    position: relative;
+    width: 800px;
+    height: 800px;
+    border: 1px solid;
+}
+
+#ball {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 1px solid;
+    border-radius: 50%;
+}
+
+#task_5 {
+    width: 150px;
+    height: 50px;
+    text-align: center;
+}
+
+
+#box {
+    height: 400px;
+    width: 250px
+}
+
+    #box .hidden {
+        overflow: hidden;
+        max-height: 0px;
+        transition: 0.5s;
+    }
+
+    #box .visible {
+        overflow: auto;
+        max-height: 400px;
+        text-align: center;
+        transition: 0.5s;
+    }
+
+#list {
+    padding: 0px;
+}
+
+#title {
+    text-align: left;
+    padding: 0px;
+}
