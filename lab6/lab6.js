@@ -32,9 +32,9 @@ const task_4 = document.getElementById('task_4')
 const ball_height = ball.offsetHeight / 2
 const ball_width = ball.offsetWidth / 2
 let click = false
-ball.addEventListener("click", () => { click = true })
-document.addEventListener("keydown", (event) => { (event.code == "Escape") && (click = false) })
-ball.addEventListener("mousemove", (event) => {
+ball.addEventListener("click", () => click = true)
+document.addEventListener("keydown", (event) => (event.code == "Escape") && (click = false))
+task_4.addEventListener("mousemove", (event) => {
     if (click) {
         const X = event.pageX - task_4.offsetLeft
         const Y = event.pageY - task_4.offsetTop
