@@ -45,7 +45,6 @@ const weather_now_func = (info) => {
 }
 
 const weather_next_func = (info) => {
-    /*console.log(info)*/
     let bottom = document.getElementById("bottom_box")
     if (bottom) bottom.remove()
     bottom = document.createElement("div")
@@ -99,6 +98,7 @@ const weather_next_func = (info) => {
 }
 
 main = () => {
+    /*console.log("----------------------------------------")*/
     const city = input_city.value === "" ? "Москва" : encodeURIComponent(input_city.value)
     const api_key = "ca145850eea033fbad59a1c102308f58"
 
@@ -106,16 +106,14 @@ main = () => {
         .then(response => response.json())
         .then(result => {
             /*console.log(result)*/
-            result.cod == 404 ? alert("Город не найден") : weather_now_func(result)
-        }, error => alert(error))
-
-    fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${api_key}`)
-        .then(response => response.json())
-        .then(result => {
-            fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${result[0].lat}&lon=${result[0].lon}&lang=ru&cnt=5&units=metric&appid=${api_key}`)
-                .then(response_in => response_in.json())
-                .then(result_in => {
-                    (result_in.cod != 404) && weather_next_func(result_in.hourly)
-                }, error => alert(error))
+            if (result.cod != 404) {
+                weather_now_func(result)
+                fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${result.coord.lat}&lon=${result.coord.lon}&lang=ru&cnt=5&units=metric&appid=${api_key}`)
+                    .then(response_in => response_in.json())
+                    .then(result_in => {
+                        /*console.log(result_in);*/
+                        (result_in.cod != 404) && weather_next_func(result_in.hourly)
+                    }, error => alert(error))
+            } else alert("Город не найден")
         }, error => alert(error))
 }

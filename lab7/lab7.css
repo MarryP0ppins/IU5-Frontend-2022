@@ -246,6 +246,7 @@ p {
         height: 170px;
     }
 }
+
 @media screen and (max-width: 400px) {
     #central_box {
         height: 200px;
@@ -263,5 +264,3 @@ p {
             font-size: 10px;
         }
 }
-
-
