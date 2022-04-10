@@ -13,7 +13,7 @@ body {
     text-shadow: 1px 1px 2px black;
 }
 
-#top_box {
+#topBox {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,19 +25,19 @@ body {
     padding: 10px 10px;
 }
 
-    #top_box #name {
+    #topBox #name {
         font-size: 50px;
         font-weight: 900;
     }
 
-    #top_box #search_box {
+    #topBox #searchBox {
         display: flex;
         justify-content: space-between;
         align-content: center;
         align-items: center;
     }
 
-    #top_box #input_city {
+    #topBox #inputCity {
         border-radius: 10px;
         height: 40px;
         font-size: 30px;
@@ -47,7 +47,7 @@ body {
         border-block-color: white;
     }
 
-    #top_box button {
+    #topBox button {
         border-radius: 10px;
         height: 45px;
         width: 45px;
@@ -62,7 +62,7 @@ body {
     color: white;
 }
 
-#central_box {
+#centralBox {
     display: flex;
     align-items: center;
     width: 80%;
@@ -74,7 +74,7 @@ body {
     height: 400px;
 }
 
-    #central_box #main_left {
+    #centralBox #mainLeft {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -82,19 +82,19 @@ body {
         height: 100%;
     }
 
-        #central_box #main_left #main_temp {
+        #centralBox #mainLeft #mainTemp {
             font-size: 140px;
             align-self: center;
         }
 
-        #central_box #main_left img {
+        #centralBox #mainLeft img {
             max-height: 200px;
             max-width: 200px;
             width: 100%;
             align-self: center;
         }
 
-    #central_box #main_right {
+    #centralBox #mainRight {
         width: 55%;
         display: flex;
         flex-direction: column;
@@ -102,17 +102,17 @@ body {
         height: 70%;
     }
 
-        #central_box #main_right #main_description {
+        #centralBox #mainRight #mainDescription {
             font-size: 60px;
         }
 
-        #central_box #main_right .item {
+        #centralBox #mainRight .item {
             display: flex;
             flex-direction: column;
             font-size: 20px;
         }
 
-#bottom_box {
+#bottomBox {
     display: flex;
     align-items: center;
     width: 80%;
@@ -126,16 +126,16 @@ body {
     -webkit-overflow-scrolling: touch;
 }
 
-    #bottom_box::-webkit-scrollbar {
+    #bottomBox::-webkit-scrollbar {
         height: 10px;
     }
 
-    #bottom_box::-webkit-scrollbar-thumb {
+    #bottomBox::-webkit-scrollbar-thumb {
         background-color: #757575;
         border-radius: 5px;
     }
 
-    #bottom_box .box_next_weather {
+    #bottomBox .boxNextWeather {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -148,7 +148,7 @@ body {
         margin: 0px 10px;
     }
 
-        #bottom_box .box_next_weather #next_left {
+        #bottomBox .boxNextWeather #nextLeft {
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -156,19 +156,19 @@ body {
             height: 100%;
         }
 
-            #bottom_box .box_next_weather #next_left #next_temp {
+            #bottomBox .boxNextWeather #nextLeft #nextTemp {
                 font-size: 40px;
                 align-self: center;
             }
 
-            #bottom_box .box_next_weather #next_left img {
+            #bottomBox .boxNextWeather #nextLeft img {
                 max-height: 200px;
                 max-width: 200px;
                 width: 100%;
                 align-self: center;
             }
 
-        #bottom_box .box_next_weather #next_right {
+        #bottomBox .boxNextWeather #nextRight {
             width: 53%;
             display: flex;
             flex-direction: column;
@@ -176,91 +176,86 @@ body {
             height: 70%;
         }
 
-            #bottom_box .box_next_weather #next_right .item {
+            #bottomBox .boxNextWeather #nextRight .item {
                 display: flex;
                 flex-direction: row;
                 justify-content: left;
                 font-size: 15px;
             }
 
-                #bottom_box .box_next_weather #next_right .item div {
+                #bottomBox .boxNextWeather #nextRight .item div {
                     padding-left: 5px;
                 }
 
 
-            #bottom_box .box_next_weather #next_right #time {
+            #bottomBox .boxNextWeather #nextRight #time {
                 font-size: 30px;
             }
 
-p {
-    bottom: 0px;
-    left: 0px;
-}
-
 @media screen and (max-width: 750px) {
-    #top_box {
+    #topBox {
         flex-direction: column;
     }
 
-        #top_box #name {
+        #topBox #name {
             font-size: 40px;
             font-weight: 600;
         }
 
-        #top_box #input_city {
+        #topBox #inputCity {
             height: 30px;
             font-size: 20px;
             width: 200px;
         }
 
-        #top_box button {
+        #topBox button {
             border-radius: 10px;
             height: 35px;
             width: 35px;
         }
 
-    #central_box {
+    #centralBox {
         height: 300px;
     }
 
-        #central_box #main_left #main_temp {
+        #centralBox #mainLeft #mainTemp {
             font-size: 80px;
         }
 
-        #central_box #main_right #main_description {
+        #centralBox #mainRight #mainDescription {
             font-size: 40px;
         }
 
-        #central_box #main_right .item {
+        #centralBox #mainRight .item {
             font-size: 15px;
         }
 }
 
 
 @media screen and (max-height: 720px) {
-    #central_box {
+    #centralBox {
         height: 300px;
     }
 
-    #bottom_box {
+    #bottomBox {
         height: 170px;
     }
 }
 
 @media screen and (max-width: 400px) {
-    #central_box {
+    #centralBox {
         height: 200px;
     }
 
-        #central_box #main_left #main_temp {
+        #centralBox #mainLeft #mainTemp {
             font-size: 60px;
         }
 
-        #central_box #main_right #main_description {
+        #centralBox #mainRight #mainDescription {
             font-size: 30px;
         }
 
-        #central_box #main_right .item {
+        #centralBox #mainRight .item {
             font-size: 10px;
         }
 }
