@@ -109,7 +109,7 @@ main = () => {
             result.cod == 404 ? alert("Город не найден") : weather_now_func(result)
         }, error => alert(error))
 
-    fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${api_key}`)
+    fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${api_key}`)
         .then(response => response.json())
         .then(result => {
             fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${result[0].lat}&lon=${result[0].lon}&lang=ru&cnt=5&units=metric&appid=${api_key}`)
