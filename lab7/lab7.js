@@ -38,7 +38,7 @@ const weather_now_func = (info) => {
     const feels_like = Math.round(info.main.feels_like)
     document.getElementById("main_feels_like").innerHTML = "Ощущается как: " + (feels_like > 0 ? '+' : feels_like < 0 ? '-' : '') + feels_like + "°"
     document.getElementById("main_description").innerHTML = info.weather[0].description[0].toUpperCase() + info.weather[0].description.slice(1)
-    document.getElementById("main_picture").src = `http://openweathermap.org/img/wn/${info.weather[0].icon}@2x.png`
+    document.getElementById("main_picture").src = `https://openweathermap.org/img/wn/${info.weather[0].icon}@2x.png`
     document.getElementById("main_wind").innerHTML = `Скорость ветра: ${Math.round(info.wind.speed)}м/с`
     document.getElementById("main_wet").innerHTML = `Относительная влажность: ${info.main.humidity}%`
     document.getElementById("main_pressure").innerHTML = `Атмосферное давлние: ${Math.round(info.main.pressure * 0.75)}мм рт. ст.`
@@ -58,7 +58,7 @@ const weather_next_func = (info) => {
 
         const next_picture = document.createElement('img')
         next_picture.setAttribute('id', "next_picture")
-        next_picture.setAttribute('src', `http://openweathermap.org/img/wn/${info[hour].weather[0].icon}@2x.png`)
+        next_picture.setAttribute('src', `https://openweathermap.org/img/wn/${info[hour].weather[0].icon}@2x.png`)
 
         const time = document.createElement('div')
         time.setAttribute('id', "time")
