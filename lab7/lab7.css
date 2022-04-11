@@ -1,0 +1,261 @@
+body {
+    display: flex;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Franklin Gothic';
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+#topBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px rgb(0 0 0 / 20%);
+    max-width: 1000px;
+    padding: 10px 10px;
+}
+
+    #topBox #name {
+        font-size: 50px;
+        font-weight: 900;
+    }
+
+    #topBox #searchBox {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+    }
+
+    #topBox #inputCity {
+        border-radius: 10px;
+        height: 40px;
+        font-size: 30px;
+        width: 300px;
+        background-color: rgb(0 0 0 / 0%);
+        color: white;
+        border-block-color: white;
+    }
+
+    #topBox button {
+        border-radius: 10px;
+        height: 45px;
+        width: 45px;
+        box-shadow: inset 0px 0px 0px 0px rgb(0 0 0 / 0%);
+        border: 0px;
+        background-size: cover;
+        cursor: pointer;
+        background-color: transparent;
+    }
+
+.fa-magnifying-glass-location {
+    color: white;
+}
+
+#centralBox {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px rgb(0 0 0 / 20%);
+    max-width: 1000px;
+    padding: 10px 10px;
+    height: 400px;
+}
+
+    #centralBox #mainLeft {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 45%;
+        height: 100%;
+    }
+
+        #centralBox #mainLeft #mainTemp {
+            font-size: 140px;
+            align-self: center;
+        }
+
+        #centralBox #mainLeft img {
+            max-height: 200px;
+            max-width: 200px;
+            width: 100%;
+            align-self: center;
+        }
+
+    #centralBox #mainRight {
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 70%;
+    }
+
+        #centralBox #mainRight #mainDescription {
+            font-size: 60px;
+        }
+
+        #centralBox #mainRight .item {
+            display: flex;
+            flex-direction: column;
+            font-size: 20px;
+        }
+
+#bottomBox {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px rgb(0 0 0 / 20%);
+    max-width: 1000px;
+    padding: 10px 10px;
+    height: 200px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+    #bottomBox::-webkit-scrollbar {
+        height: 10px;
+    }
+
+    #bottomBox::-webkit-scrollbar-thumb {
+        background-color: #757575;
+        border-radius: 5px;
+    }
+
+    #bottomBox .boxNextWeather {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        scroll-snap-align: start;
+        height: 150px;
+        min-width: 220px;
+        box-shadow: 0px 0px 10px 5px rgb(0 0 0 / 20%);
+        border-radius: 10px;
+        margin: 0px 10px;
+    }
+
+        #bottomBox .boxNextWeather #nextLeft {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 45%;
+            height: 100%;
+        }
+
+            #bottomBox .boxNextWeather #nextLeft #nextTemp {
+                font-size: 40px;
+                align-self: center;
+            }
+
+            #bottomBox .boxNextWeather #nextLeft img {
+                max-height: 200px;
+                max-width: 200px;
+                width: 100%;
+                align-self: center;
+            }
+
+        #bottomBox .boxNextWeather #nextRight {
+            width: 53%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: 70%;
+        }
+
+            #bottomBox .boxNextWeather #nextRight .item {
+                display: flex;
+                flex-direction: row;
+                justify-content: left;
+                font-size: 15px;
+            }
+
+                #bottomBox .boxNextWeather #nextRight .item div {
+                    padding-left: 5px;
+                }
+
+
+            #bottomBox .boxNextWeather #nextRight #time {
+                font-size: 30px;
+            }
+
+@media screen and (max-width: 750px) {
+    #topBox {
+        flex-direction: column;
+    }
+
+        #topBox #name {
+            font-size: 40px;
+            font-weight: 600;
+        }
+
+        #topBox #inputCity {
+            height: 30px;
+            font-size: 20px;
+            width: 200px;
+        }
+
+        #topBox button {
+            border-radius: 10px;
+            height: 35px;
+            width: 35px;
+        }
+
+    #centralBox {
+        height: 300px;
+    }
+
+        #centralBox #mainLeft #mainTemp {
+            font-size: 80px;
+        }
+
+        #centralBox #mainRight #mainDescription {
+            font-size: 40px;
+        }
+
+        #centralBox #mainRight .item {
+            font-size: 15px;
+        }
+}
+
+
+@media screen and (max-height: 720px) {
+    #centralBox {
+        height: 300px;
+    }
+
+    #bottomBox {
+        height: 170px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #centralBox {
+        height: 200px;
+    }
+
+        #centralBox #mainLeft #mainTemp {
+            font-size: 60px;
+        }
+
+        #centralBox #mainRight #mainDescription {
+            font-size: 30px;
+        }
+
+        #centralBox #mainRight .item {
+            font-size: 10px;
+        }
+}

@@ -1,12 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Lab7</title>
-    </head>
-    <body>
-
-    </body>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/dc5f3b57dc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./lab7.css" />
+    <title>Lab7</title>
+</head>
+<body id="back" onload="main()">
+    <div id="topBox">
+        <div id="name">N.Погода</div>
+        <div id="searchBox">
+            <input type="text" id="inputCity" placeholder="Введите город..." />
+            <button onclick="main()" id="weatherSearch"><i class="fa-solid fa-magnifying-glass-location fa-2xl"></i></button>
+        </div>
+    </div>
+    <div id="centralBox">
+        <div id="mainLeft">
+            <div id="mainTemp"></div>
+            <img id="mainPicture" src="" />
+        </div>
+        <div id="mainRight">
+            <div id="mainDescription"></div>
+            <div class="item" id="mainFeelsLike"></div>
+            <div class="item" id="mainWind"></div>
+            <div class="item" id="mainWet"></div>
+            <div class="item" id="mainPressure"></div>
+        </div>
+    </div>
+    <script id="script" src="./lab7.js"></script>
+</body>
 </html>
