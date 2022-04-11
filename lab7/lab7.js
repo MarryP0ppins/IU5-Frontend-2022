@@ -34,9 +34,9 @@ const changeBackground = (code) => {
 const weatherNowFunc = (info) => {
     changeBackground(info.weather[0].icon)
     const temp = Math.round(info.main.temp);
-    document.getElementById("mainTemp").innerHTML = (temp > 0 ? '+' : temp < 0 ? '-' : '') + temp + "°"
+    document.getElementById("mainTemp").innerHTML = (temp > 0 ? '+' : '') + temp + "°"
     const feelsLike = Math.round(info.main.feels_like)
-    document.getElementById("mainFeelsLike").innerHTML = "Ощущается как: " + (feelsLike > 0 ? '+' : feelsLike < 0 ? '-' : '') + feelsLike + "°"
+    document.getElementById("mainFeelsLike").innerHTML = "Ощущается как: " + (feelsLike > 0 ? '+' : '') + feelsLike + "°"
     document.getElementById("mainDescription").innerHTML = info.weather[0].description[0].toUpperCase() + info.weather[0].description.slice(1)
     document.getElementById("mainPicture").src = `https://openweathermap.org/img/wn/${info.weather[0].icon}@2x.png`
     document.getElementById("mainWind").innerHTML = `Скорость ветра: ${Math.round(info.wind.speed)}м/с`
@@ -53,7 +53,7 @@ const weatherNextFunc = (info) => {
     for (hour = 1; hour < 24; hour++) {
         const nextTemp = document.createElement('div')
         nextTemp.setAttribute('id', 'nextTemp')
-        nextTemp.innerHTML = (Math.round(info[hour].temp) > 0 ? '+' : Math.round(info[hour].temp) < 0 ? '-' : '') + Math.round(info[hour].temp) + "°"
+        nextTemp.innerHTML = (Math.round(info[hour].temp) > 0 ? '+' : '') + Math.round(info[hour].temp) + "°"
 
         const nextPicture = document.createElement('img')
         nextPicture.setAttribute('id', "nextPicture")
