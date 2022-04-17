@@ -43,9 +43,8 @@ function App() {
     return (
         <div className="App">
             <span className="Name">To Do</span>
-            <form className="input">
+            <form className="input" onSubmit={event => event.preventDefault()}>
                 <input
-                    type="text"
                     className="newToDo"
                     placeholder="Введите новую задачу..."
                     value={valueToDo}
