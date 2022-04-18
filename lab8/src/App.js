@@ -39,7 +39,7 @@ function App() {
             ))
         )
     }
-    //console.log(toDos)
+
     return (
         <div className="App">
             <span className="Name">To Do</span>

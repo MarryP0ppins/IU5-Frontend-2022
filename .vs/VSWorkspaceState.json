@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\lab7"
+    "\\lab8",
+    "\\lab8\\src"
   ],
-  "SelectedNode": "\\lab7\\lab7.js",
+  "SelectedNode": "\\lab8\\src\\App.js",
   "PreviewInSolutionExplorer": false
 }
